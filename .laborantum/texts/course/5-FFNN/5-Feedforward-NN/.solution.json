@@ -30,22 +30,22 @@
         "shape": []
     },
     "X_train_normalized.mean": {
-        "__ndarray__": 33.31842041015625,
+        "__ndarray__": 1.918247782839444e-8,
         "dtype": "float32",
         "shape": []
     },
     "X_train_normalized.std": {
-        "__ndarray__": 78.56748962402344,
+        "__ndarray__": 1,
         "dtype": "float32",
         "shape": []
     },
     "X_test_normalized.mean": {
-        "__ndarray__": 33.791221618652344,
+        "__ndarray__": 0.006017815321683884,
         "dtype": "float32",
         "shape": []
     },
     "X_test_normalized.std": {
-        "__ndarray__": 79.17247009277344,
+        "__ndarray__": 1.0077000856399536,
         "dtype": "float32",
         "shape": []
     },
@@ -191,108 +191,108 @@
     "optimizer": "AdamW (\nParameter Group 0\n    amsgrad: False\n    betas: (0.9, 0.999)\n    capturable: False\n    decoupled_weight_decay: True\n    differentiable: False\n    eps: 1e-08\n    foreach: None\n    fused: None\n    lr: 0.001\n    maximize: False\n    weight_decay: 0.01\n)",
     "train_loss_histoory": [
         {
-            "__ndarray__": 0.3481885492801666,
+            "__ndarray__": 0.24486953020095825,
             "dtype": "float32",
             "shape": []
         },
         {
-            "__ndarray__": 0.2977902293205261,
+            "__ndarray__": 0.17343337833881378,
             "dtype": "float32",
             "shape": []
         },
         {
-            "__ndarray__": 0.2898622453212738,
+            "__ndarray__": 0.13547495007514954,
             "dtype": "float32",
             "shape": []
         },
         {
-            "__ndarray__": 0.2660508155822754,
+            "__ndarray__": 0.10944828391075134,
             "dtype": "float32",
             "shape": []
         },
         {
-            "__ndarray__": 0.2676892578601837,
+            "__ndarray__": 0.09205318987369537,
             "dtype": "float32",
             "shape": []
         }
     ],
     "test_loss_history": [
         {
-            "__ndarray__": 0.3446047902107239,
+            "__ndarray__": 0.24745668470859528,
             "dtype": "float32",
             "shape": []
         },
         {
-            "__ndarray__": 0.29194366931915283,
+            "__ndarray__": 0.1846541166305542,
             "dtype": "float32",
             "shape": []
         },
         {
-            "__ndarray__": 0.290607213973999,
+            "__ndarray__": 0.15273451805114746,
             "dtype": "float32",
             "shape": []
         },
         {
-            "__ndarray__": 0.2651342749595642,
+            "__ndarray__": 0.1320253163576126,
             "dtype": "float32",
             "shape": []
         },
         {
-            "__ndarray__": 0.26781773567199707,
+            "__ndarray__": 0.11826220899820328,
             "dtype": "float32",
             "shape": []
         }
     ],
     "train_acc_history": [
         {
-            "__ndarray__": 0.9061166644096375,
+            "__ndarray__": 0.932533323764801,
             "dtype": "float32",
             "shape": []
         },
         {
-            "__ndarray__": 0.9174833297729492,
+            "__ndarray__": 0.9518833160400391,
             "dtype": "float32",
             "shape": []
         },
         {
-            "__ndarray__": 0.9161999821662903,
+            "__ndarray__": 0.9625666737556458,
             "dtype": "float32",
             "shape": []
         },
         {
-            "__ndarray__": 0.9233999848365784,
+            "__ndarray__": 0.9706833362579346,
             "dtype": "float32",
             "shape": []
         },
         {
-            "__ndarray__": 0.9218500256538391,
+            "__ndarray__": 0.9758666753768921,
             "dtype": "float32",
             "shape": []
         }
     ],
     "test_ann_history": [
         {
-            "__ndarray__": 0.9057000279426575,
+            "__ndarray__": 0.9309999942779541,
             "dtype": "float32",
             "shape": []
         },
         {
-            "__ndarray__": 0.9217000007629395,
+            "__ndarray__": 0.9455000162124634,
             "dtype": "float32",
             "shape": []
         },
         {
-            "__ndarray__": 0.9168000221252441,
+            "__ndarray__": 0.9545999765396118,
             "dtype": "float32",
             "shape": []
         },
         {
-            "__ndarray__": 0.9251000285148621,
+            "__ndarray__": 0.9603000283241272,
             "dtype": "float32",
             "shape": []
         },
         {
-            "__ndarray__": 0.9240000247955322,
+            "__ndarray__": 0.9648000001907349,
             "dtype": "float32",
             "shape": []
         }
