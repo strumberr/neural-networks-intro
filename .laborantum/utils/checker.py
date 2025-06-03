@@ -38,6 +38,15 @@ def run_checks(
     
     report = []
 
+    if expected is None:
+        if recieved is None:
+            explanation = "OK"
+            return  [{'name': test_info, 'ok': True, 'status': explanation}]
+        else:
+            explanation = f"Expecting None, got {str(recieved)}"
+            return [{'name': test_info, 'ok': False, 'status': explanation}]
+
+
     if isinstance(expected, dict):
         report = []
 
@@ -63,7 +72,7 @@ def run_checks(
             return [{'name': test_info, 'ok': True, 'status': explanation}]
         
     
-    if isinstance(expected, list):
+    if isinstance(expected, (list, tuple)):
         report = []
 
         for index in range(len(expected)):
