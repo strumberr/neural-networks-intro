@@ -3,7 +3,7 @@ order:
   - 2-Gradient-Descent
   - 3-Backpropagation
   - 4-Simple-Network
-  - 5-Feedforward-NN
+  - 5-FFNN
   - 6-Convolutional-NN
   - 7-Segmentation
   - 8-Detection
