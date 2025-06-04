@@ -3,8 +3,8 @@
         {
             "path": "/texts/course/config.yml",
             "status": {
-                "total": 60,
-                "correct": 19.901960784313726
+                "total": 90,
+                "correct": 32.25490196078431
             }
         },
         {
@@ -89,6 +89,13 @@
             "status": {
                 "total": 1,
                 "correct": 0
+            }
+        },
+        {
+            "path": "/texts/course/5-FFNN/config.yml",
+            "status": {
+                "total": 30,
+                "correct": 12.352941176470587
             }
         }
     ],
@@ -20856,7 +20863,271 @@
                     {
                         "name": "root -> trained_pred",
                         "ok": false,
-                        "status": "FAILED: answers do not match:\nMaximal average mismatch: 0.0001\nRecieved average mismatch: 0.013814297"
+                        "status": "FAILED: answers do not match:\nMaximal average mismatch: 0.0001\nRecieved average mismatch: 0.0130645465"
+                    }
+                ]
+            }
+        },
+        {
+            "path": "/texts/course/5-FFNN/5-Feedforward-NN/config.yml",
+            "status": {
+                "correct": 12.352941176470587,
+                "total": 30,
+                "testStatus": [
+                    {
+                        "name": "root -> X_train.dtype",
+                        "ok": true,
+                        "status": "OK"
+                    },
+                    {
+                        "name": "root -> y_train.dtype",
+                        "ok": true,
+                        "status": "OK"
+                    },
+                    {
+                        "name": "root -> X_train.shape -> 0",
+                        "ok": true,
+                        "status": "OK"
+                    },
+                    {
+                        "name": "root -> X_train.shape -> 1",
+                        "ok": true,
+                        "status": "OK"
+                    },
+                    {
+                        "name": "root -> X_train.shape -> 2",
+                        "ok": true,
+                        "status": "OK"
+                    },
+                    {
+                        "name": "root -> X_test.shape -> 0",
+                        "ok": true,
+                        "status": "OK"
+                    },
+                    {
+                        "name": "root -> X_test.shape -> 1",
+                        "ok": true,
+                        "status": "OK"
+                    },
+                    {
+                        "name": "root -> X_test.shape -> 2",
+                        "ok": true,
+                        "status": "OK"
+                    },
+                    {
+                        "name": "root -> y_train.shape -> 0",
+                        "ok": true,
+                        "status": "OK"
+                    },
+                    {
+                        "name": "root -> y_test.shape -> 0",
+                        "ok": true,
+                        "status": "OK"
+                    },
+                    {
+                        "name": "root -> X_train.dtype2",
+                        "ok": true,
+                        "status": "OK"
+                    },
+                    {
+                        "name": "root -> X_test.dtype2",
+                        "ok": true,
+                        "status": "OK"
+                    },
+                    {
+                        "name": "root -> X_train.mean",
+                        "ok": true,
+                        "status": "OK"
+                    },
+                    {
+                        "name": "root -> X_train.std",
+                        "ok": true,
+                        "status": "OK"
+                    },
+                    {
+                        "name": "root -> X_train_normalized.mean",
+                        "ok": false,
+                        "status": "\n                    FAILED: Incorrect answer. Misfit is 33.31842041015625,'\n                    that is larger than eps (0.0001)"
+                    },
+                    {
+                        "name": "root -> X_train_normalized.std",
+                        "ok": false,
+                        "status": "\n                    FAILED: Incorrect answer. Misfit is 77.56748962402344,'\n                    that is larger than eps (0.0001)"
+                    },
+                    {
+                        "name": "root -> X_test_normalized.mean",
+                        "ok": false,
+                        "status": "\n                    FAILED: Incorrect answer. Misfit is 33.78520202636719,'\n                    that is larger than eps (0.0001)"
+                    },
+                    {
+                        "name": "root -> X_test_normalized.std",
+                        "ok": false,
+                        "status": "\n                    FAILED: Incorrect answer. Misfit is 78.1647720336914,'\n                    that is larger than eps (0.0001)"
+                    },
+                    {
+                        "name": "root -> X_train.shape2 -> 0",
+                        "ok": true,
+                        "status": "OK"
+                    },
+                    {
+                        "name": "root -> X_train.shape2 -> 1",
+                        "ok": true,
+                        "status": "OK"
+                    },
+                    {
+                        "name": "root -> X_test.shape2 -> 0",
+                        "ok": true,
+                        "status": "OK"
+                    },
+                    {
+                        "name": "root -> X_test.shape2 -> 1",
+                        "ok": true,
+                        "status": "OK"
+                    },
+                    {
+                        "name": "root -> check_result",
+                        "ok": true,
+                        "status": "OK"
+                    },
+                    {
+                        "name": "root -> loss",
+                        "ok": true,
+                        "status": "OK"
+                    },
+                    {
+                        "name": "root -> optimizer",
+                        "ok": true,
+                        "status": "OK"
+                    },
+                    {
+                        "name": "root -> train_loss_histoory -> 0",
+                        "ok": false,
+                        "status": "\n                    FAILED: Incorrect answer. Misfit is 0.10331901907920837,'\n                    that is larger than eps (0.0001)"
+                    },
+                    {
+                        "name": "root -> train_loss_histoory -> 1",
+                        "ok": false,
+                        "status": "\n                    FAILED: Incorrect answer. Misfit is 0.12435685098171234,'\n                    that is larger than eps (0.0001)"
+                    },
+                    {
+                        "name": "root -> train_loss_histoory -> 2",
+                        "ok": false,
+                        "status": "\n                    FAILED: Incorrect answer. Misfit is 0.15438729524612427,'\n                    that is larger than eps (0.0001)"
+                    },
+                    {
+                        "name": "root -> train_loss_histoory -> 3",
+                        "ok": false,
+                        "status": "\n                    FAILED: Incorrect answer. Misfit is 0.15660253167152405,'\n                    that is larger than eps (0.0001)"
+                    },
+                    {
+                        "name": "root -> train_loss_histoory -> 4",
+                        "ok": false,
+                        "status": "\n                    FAILED: Incorrect answer. Misfit is 0.17563606798648834,'\n                    that is larger than eps (0.0001)"
+                    },
+                    {
+                        "name": "root -> test_loss_history -> 0",
+                        "ok": false,
+                        "status": "\n                    FAILED: Incorrect answer. Misfit is 0.0971481055021286,'\n                    that is larger than eps (0.0001)"
+                    },
+                    {
+                        "name": "root -> test_loss_history -> 1",
+                        "ok": false,
+                        "status": "\n                    FAILED: Incorrect answer. Misfit is 0.10728955268859863,'\n                    that is larger than eps (0.0001)"
+                    },
+                    {
+                        "name": "root -> test_loss_history -> 2",
+                        "ok": false,
+                        "status": "\n                    FAILED: Incorrect answer. Misfit is 0.13787269592285156,'\n                    that is larger than eps (0.0001)"
+                    },
+                    {
+                        "name": "root -> test_loss_history -> 3",
+                        "ok": false,
+                        "status": "\n                    FAILED: Incorrect answer. Misfit is 0.1331089586019516,'\n                    that is larger than eps (0.0001)"
+                    },
+                    {
+                        "name": "root -> test_loss_history -> 4",
+                        "ok": false,
+                        "status": "\n                    FAILED: Incorrect answer. Misfit is 0.1495555341243744,'\n                    that is larger than eps (0.0001)"
+                    },
+                    {
+                        "name": "root -> train_acc_history -> 0",
+                        "ok": false,
+                        "status": "\n                    FAILED: Incorrect answer. Misfit is 0.026416659355163574,'\n                    that is larger than eps (0.0001)"
+                    },
+                    {
+                        "name": "root -> train_acc_history -> 1",
+                        "ok": false,
+                        "status": "\n                    FAILED: Incorrect answer. Misfit is 0.034399986267089844,'\n                    that is larger than eps (0.0001)"
+                    },
+                    {
+                        "name": "root -> train_acc_history -> 2",
+                        "ok": false,
+                        "status": "\n                    FAILED: Incorrect answer. Misfit is 0.04636669158935547,'\n                    that is larger than eps (0.0001)"
+                    },
+                    {
+                        "name": "root -> train_acc_history -> 3",
+                        "ok": false,
+                        "status": "\n                    FAILED: Incorrect answer. Misfit is 0.0472833514213562,'\n                    that is larger than eps (0.0001)"
+                    },
+                    {
+                        "name": "root -> train_acc_history -> 4",
+                        "ok": false,
+                        "status": "\n                    FAILED: Incorrect answer. Misfit is 0.05401664972305298,'\n                    that is larger than eps (0.0001)"
+                    },
+                    {
+                        "name": "root -> test_ann_history -> 0",
+                        "ok": false,
+                        "status": "\n                    FAILED: Incorrect answer. Misfit is 0.02529996633529663,'\n                    that is larger than eps (0.0001)"
+                    },
+                    {
+                        "name": "root -> test_ann_history -> 1",
+                        "ok": false,
+                        "status": "\n                    FAILED: Incorrect answer. Misfit is 0.023800015449523926,'\n                    that is larger than eps (0.0001)"
+                    },
+                    {
+                        "name": "root -> test_ann_history -> 2",
+                        "ok": false,
+                        "status": "\n                    FAILED: Incorrect answer. Misfit is 0.037799954414367676,'\n                    that is larger than eps (0.0001)"
+                    },
+                    {
+                        "name": "root -> test_ann_history -> 3",
+                        "ok": false,
+                        "status": "\n                    FAILED: Incorrect answer. Misfit is 0.03519999980926514,'\n                    that is larger than eps (0.0001)"
+                    },
+                    {
+                        "name": "root -> test_ann_history -> 4",
+                        "ok": false,
+                        "status": "\n                    FAILED: Incorrect answer. Misfit is 0.04079997539520264,'\n                    that is larger than eps (0.0001)"
+                    },
+                    {
+                        "name": "root -> model_deep",
+                        "ok": false,
+                        "status": "FAILED: Edit distance between strings is 1444"
+                    },
+                    {
+                        "name": "root -> test_output_deep",
+                        "ok": false,
+                        "status": "FAILED: answers do not match:\nMaximal average mismatch: 0.0001\nRecieved average mismatch: 0.2344351"
+                    },
+                    {
+                        "name": "root -> model_deep_residual",
+                        "ok": false,
+                        "status": "FAILED: Edit distance between strings is 1438"
+                    },
+                    {
+                        "name": "root -> test_output_deep_residual",
+                        "ok": false,
+                        "status": "FAILED: answers do not match:\nMaximal average mismatch: 0.0001\nRecieved average mismatch: 1.2950183"
+                    },
+                    {
+                        "name": "root -> model_deep_residual_linnormact",
+                        "ok": false,
+                        "status": "FAILED: Edit distance between strings is 2149"
+                    },
+                    {
+                        "name": "root -> test_output_deep_residual_linnormact",
+                        "ok": false,
+                        "status": "FAILED: answers do not match:\nMaximal average mismatch: 0.0001\nRecieved average mismatch: 4.3615675"
                     }
                 ]
             }
