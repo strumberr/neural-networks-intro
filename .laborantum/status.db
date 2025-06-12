@@ -20344,9 +20344,10 @@
         {
             "path": "/texts/course/3-Backpropagation/3-Coding-Backpropagation/config.yml",
             "status": {
-                "total": 1,
+                "total": 30,
                 "correct": 0,
-                "selectedVariantIds": []
+                "testStatus": [],
+                "error": "Traceback (most recent call last):\n  File \"/workspaces/neural-networks-intro/.laborantum/utils/checker.py\", line 254, in <module>\n    check_json(args.task)\n  File \"/workspaces/neural-networks-intro/.laborantum/utils/checker.py\", line 218, in check_json\n    report = run_checks(student_state, teacher_state, test_info='root')\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspaces/neural-networks-intro/.laborantum/utils/checker.py\", line 58, in run_checks\n    report.extend(run_checks(new_recieved, new_expected, test_info_new))\n                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspaces/neural-networks-intro/.laborantum/utils/checker.py\", line 83, in run_checks\n    one_check = run_checks(new_recieved, new_expected, test_info_new)\n                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspaces/neural-networks-intro/.laborantum/utils/checker.py\", line 123, in run_checks\n    if recieved.dtype != expected.dtype:\n       ^^^^^^^^^^^^^^\nAttributeError: 'float' object has no attribute 'dtype'\n"
             }
         },
         {
