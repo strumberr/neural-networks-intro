@@ -11,6 +11,8 @@ from copy import deepcopy
 from pathlib import Path
 from nbconvert.exporters import PythonExporter
 
+import sys
+
 
 def check_condition(condition, info, successes, failures, test_weight):
     if condition:
@@ -120,13 +122,38 @@ def run_checks(
                 return [{'name': test_info, 'ok': False, 'status': explanation}]
 
         # Checking if Numpy arrays have the same dtype
-        if recieved.dtype != expected.dtype:
-            explanation = (
-                'FAILED: data types do not match:\n' +
-                'Expected type: {}'.format(expected.dtype) + '\n' +
-                'Recieved type: {}'.format(recieved.dtype)
-            )
-            return [{'name': test_info, 'ok': False, 'status': explanation}]
+        # if recieved.dtype != expected.dtype:
+        #     explanation = (
+        #         'FAILED: data types do not match:\n' +
+        #         'Expected type: {}'.format(expected.dtype) + '\n' +
+        #         'Recieved type: {}'.format(recieved.dtype)
+        #     )
+        #     return [{'name': test_info, 'ok': False, 'status': explanation}]
+
+        try:
+            if hasattr(recieved, "dtype") and hasattr(expected, "dtype"):
+                if recieved.dtype != expected.dtype:
+                    explanation = (
+                        'FAILED: data types do not match:\n' +
+                        f'Expected type: {expected.dtype}\n' +
+                        f'Received type: {recieved.dtype}'
+                    )
+                    return [{'name': test_info, 'ok': False, 'status': explanation}]
+            else:
+                sys.stderr.write("❌ AttributeError in checker.py!\n")
+                sys.stderr.write(f"🔍 test_info: {test_info}\n")
+                sys.stderr.write(f"🔍 recieved type: {type(recieved)}\n")
+                sys.stderr.write(f"🔍 recieved value: {recieved}\n")
+                sys.stderr.write(f"🔍 expected type: {type(expected)}\n")
+                sys.stderr.write(f"🔍 expected dtype: {getattr(expected, 'dtype', 'NO DTYPE')}\n")
+                sys.stderr.flush()
+                raise AttributeError("One of the values has no dtype.")
+        except Exception as e:
+            print("💥 Exception during dtype comparison:", e)
+            raise
+
+
+
         
         # Checking if the arrays have the same number of dimensions
         if len(expected.shape) != len(recieved.shape):
